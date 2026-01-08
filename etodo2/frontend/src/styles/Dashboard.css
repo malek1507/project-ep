@@ -1,0 +1,81 @@
+.dashboard {
+    min-height: 100vh;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.dashboard.light {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.dashboard.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.dashboard.colorblind {
+    filter: invert(100%);
+}
+
+.dashboard.colorblind nav h1 {
+    filter: invert(100%);
+}
+
+.dashboard.colorblind .todo-list input,
+.dashboard.colorblind .todo-list textarea {
+    filter: invert(100%);
+}
+
+.dashboard.colorblind .todo-list .todo-item h3,
+.dashboard.colorblind .todo-list .todo-item p {
+    filter: invert(100%);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+nav button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.dashboard.light button {
+    background-color: #007bff;
+    color: white;
+}
+
+.dashboard.dark button {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.dashboard.colorblind button {
+    background-color: #007bff;
+    color: white;
+}
+
+.todo-list .search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
